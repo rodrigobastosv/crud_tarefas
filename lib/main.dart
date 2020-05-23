@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mobx_flutter/create_tarefa.dart';
-import 'package:mobx_flutter/tarefa_controller.dart';
 
+import 'create_tarefa.dart';
 import 'tarefa.dart';
+import 'tarefa_controller.dart';
 import 'tarefas_list.dart';
 
 void main() {
@@ -29,6 +29,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Controle de Tarefas'),
+        centerTitle: true,
       ),
       body: TarefasList(
         tarefaController,

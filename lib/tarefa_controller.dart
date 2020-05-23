@@ -1,5 +1,6 @@
 import 'package:mobx/mobx.dart';
-import 'package:mobx_flutter/tarefa.dart';
+
+import 'tarefa.dart';
 
 part 'tarefa_controller.g.dart';
 

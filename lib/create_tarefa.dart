@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobx_flutter/tarefa.dart';
+
+import 'tarefa.dart';
 
 class CreateTarefa extends StatefulWidget {
   CreateTarefa(this.onAdicionaTarefa, {this.onEditaTarefa, this.tarefa});

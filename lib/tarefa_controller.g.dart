@@ -12,13 +12,13 @@ mixin _$TarefaController on TarefaControllerBase, Store {
   final _$tarefasAtom = Atom(name: 'TarefaControllerBase.tarefas');
 
   @override
-  ObservableList<dynamic> get tarefas {
+  ObservableList<Tarefa> get tarefas {
     _$tarefasAtom.reportRead();
     return super.tarefas;
   }
 
   @override
-  set tarefas(ObservableList<dynamic> value) {
+  set tarefas(ObservableList<Tarefa> value) {
     _$tarefasAtom.reportWrite(value, super.tarefas, () {
       super.tarefas = value;
     });
@@ -39,7 +39,7 @@ mixin _$TarefaController on TarefaControllerBase, Store {
   }
 
   @override
-  void editaTarefa(dynamic tarefa) {
+  void editaTarefa(Tarefa tarefa) {
     final _$actionInfo = _$TarefaControllerBaseActionController.startAction(
         name: 'TarefaControllerBase.editaTarefa');
     try {
@@ -50,7 +50,7 @@ mixin _$TarefaController on TarefaControllerBase, Store {
   }
 
   @override
-  void removeTarefa(dynamic tarefa) {
+  void removeTarefa(Tarefa tarefa) {
     final _$actionInfo = _$TarefaControllerBaseActionController.startAction(
         name: 'TarefaControllerBase.removeTarefa');
     try {

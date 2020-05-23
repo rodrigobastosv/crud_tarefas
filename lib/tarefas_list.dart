@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mobx_flutter/tarefa_controller.dart';
 
 import 'create_tarefa.dart';
 import 'tarefa.dart';
+import 'tarefa_controller.dart';
 
 class TarefasList extends StatelessWidget {
   TarefasList(
